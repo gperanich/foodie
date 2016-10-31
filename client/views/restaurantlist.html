@@ -1,0 +1,34 @@
+<div class="container-fluid" id="jumbotron-restaurantlist">
+    <div class="row" id="welcome-row">
+        <div class="col-md-12" id="welcome-row">
+            <div class="container-fluid map-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <iframe
+                            width="600"
+                            height="450"
+                            frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAQRd75QovSG9yzCjXul4J6QxcBo2Dtk00
+                                &q=Zoes+Kitchen,Birmingham+AL+35209" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="restaurant-list">
+                <div class="new-restaurant" ng-repeat="restaurant in restaurants">
+                    <div class="restaurant-info">
+                        <p>{{ restaurant.name }}</p>
+                        <p>{{ restaurant.address }}</p>
+                        <a href="/restaurants/{{ restaurant._id }}">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

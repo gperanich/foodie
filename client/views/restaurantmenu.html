@@ -1,0 +1,44 @@
+<h6><a href="/restaurants">Back</a></h6>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="menu-categories">
+                <div class="menu-categories" ng-repeat="category in categories">
+                    <div class="new-category" ng-click="showMenu(category)">
+                        <h4>{{ category.name }}</h4>
+                        <!--<div class="menuitems" ng-hide="menuHide" >
+                            <p class="singlemenuitem" ng-repeat="menuitem in categoryMenuItems">{{ menuitem.name }} {{ menuitem.price }}</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="menuitems" ng-hide="menuHide">
+                <p class="singlemenuitem" ng-click="addItem(menuitem)" ng-repeat="menuitem in categoryMenuItems">{{ menuitem.name }} {{ menuitem.price }}</p>
+            </div>
+            <div id="your-order" ng-model="yourOrder">
+                <h2>Your Order:</h2>
+                <h6>(Click item to remove)</h6>
+                <p class="order-item" ng-repeat="orderItem in currentOrder" ng-click="deleteItem($index)">{{ orderItem.name }} {{ orderItem.price }}</p>
+                <h4 ng-model="orderTotal">Total: {{ orderTotal | currency : symbol }}</h4>
+                <button ng-click="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="checkout" ng-hide="checkoutHide">
+                <h3>Payment</h3>
+                <input type="text" class="payment-inputs" ng-model="clientName" placeholder="name"><br>
+                <input type="email" class="payment-inputs" ng-model="clientEmail" placeholder="email"><br>
+                <input type="number" class="payment-inputs" ng-model="clientPhoneNumber" placeholder="phone number"><br>
+                <input type="text" class="payment-inputs" ng-model="cardNumber" placeholder="Card Number"><br>
+                <input type="number" class="payment-inputs" ng-model="cvc" placeholder="cvc"><br>
+                <input type="number" class="payment-inputs" ng-model="expMonth" placeholder="exp month"><br>
+                <input type="number" class="payment-inputs" ng-model="expYear" placeholder="exp year"><br>
+                <button ng-click="confirmPurchase()">Confirm</button><br>
+            </div>
+        </div>
+    </div>
+</div>

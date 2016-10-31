@@ -1,0 +1,272 @@
+body {
+  background-color: whitesmoke;
+}
+.custom-drawer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 270px;
+  background-color: whitesmoke;
+}
+.custom-drawer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.custom-drawer ul li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.custom-drawer ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.app {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: left 0.2s linear;
+  transition: left 0.2s linear;
+}
+.app .custom-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px;
+}
+.app .custom-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.app .custom-navbar ul li {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  color: white;
+}
+.app .custom-navbar ul li a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.app .custom-navbar .hamburger {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 50px;
+  background-color: black;
+  color: ghostwhite;
+  border-radius: 10px;
+}
+.app .custom-navbar .hamburger span {
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 1.5em;
+  padding-left: 5px;
+}
+.app .site-content {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+@media screen and (max-width: 2000px) {
+  .custom-drawer {
+    display: block;
+  }
+  .app.showing-drawer {
+    left: 270px;
+    -webkit-box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.7);
+  }
+  .app .custom-navbar ul {
+    display: none;
+  }
+  .app .custom-navbar .hamburger {
+    display: block;
+  }
+}
+.welcome-info {
+  text-align: center;
+}
+.contact-us {
+  text-align: left;
+  margin-bottom: 100px;
+}
+.contact-us #contact-header input {
+  margin-left: -15px;
+  width: 250px;
+  height: 3em;
+}
+#input-email {
+  margin-left: -15px;
+  width: 490px;
+  height: 200px;
+}
+.sign-up {
+  text-align: left;
+}
+.signup-input {
+  width: 400px;
+  height: 3em;
+  margin-bottom: 5px;
+}
+#signup-button {
+  margin-left: 20px;
+}
+#nav-left {
+  width: 50%;
+  float: left;
+}
+#nav-right {
+  width: 50%;
+  float: right;
+}
+#nav-right li {
+  float: right;
+}
+.row-nav {
+  margin-bottom: -20px;
+}
+.jumbotron {
+  height: 500px;
+  background-image: url(/views/01TacosalPastor.jpg);
+  background-size: 100%, 10%;
+  background-position-y: center;
+}
+#jumbotron-left {
+  width: 40%;
+  float: left;
+}
+#jumbotron-right {
+  width: 40%;
+  float: right;
+}
+#search-container {
+  margin-bottom: 250px;
+  margin-top: 150px;
+  margin-right: 50px;
+  color: white;
+  background-color: gray;
+  background: rgba(0, 0, 0, 0.5);
+  height: 200px;
+  border-radius: 10px;
+  padding: 15px;
+}
+#jumbotron-text {
+  margin-top: 150px;
+  margin-bottom: 250px;
+  margin-left: 100px;
+  color: whitesmoke;
+}
+#search-container-text {
+  text-align: center;
+}
+#how-it-works {
+  text-align: center;
+  font-size: 1em;
+  text-decoration: underline;
+  padding-top: 15px;
+}
+#how-it-works a {
+  color: white;
+}
+#welcome-options {
+  margin-bottom: 100px;
+}
+#restaurant-list {
+  margin-bottom: 100px;
+  float: left;
+  width: 100%;
+  position: absolute;
+}
+.new-restaurant {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightslategray;
+  width: 100%;
+}
+.restaurant-info {
+  width: 100%;
+}
+#jumbotron-restaurantlist {
+  height: 500px;
+  margin-bottom: 50px;
+}
+#welcome-row {
+  height: 500px;
+}
+.menuitems {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.singlemenuitem {
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px;
+}
+#checkout {
+  float: right;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#your-order {
+  float: right;
+  margin-right: 50px;
+}
+.order-glyphs {
+  font-size: 4em;
+}
+.welcome-glyphs {
+  font-size: 3em;
+  text-align: center;
+}
+#checkout {
+  margin-right: 50%;
+}
+#checkout .payment-inputs {
+  margin: 5px;
+  height: 50px;
+  width: 300px;
+}
+#menu-categories {
+  float: left;
+}
+#menu-categories .menu-categories {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin: 2px;
+  text-align: center;
+  width: 175px;
+}
+#menu-categories .menu-categories:hover {
+  -webkit-box-shadow: 1px 1px 1px 1px #334466;
+  box-shadow: 1px 1px 1px 1px #334466;
+}

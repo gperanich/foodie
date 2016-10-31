@@ -1,0 +1,86 @@
+<div class="container-fluid" id="jumbotron-restaurantlist">
+    <div class="row" id="welcome-row">
+        <div class="col-md-12" id="welcome-row">
+            <div class="jumbotron">
+                <div id="jumbotron-left">
+                    <div id="jumbotron-text">
+                        <h1>Foodie</h1>
+                        <p>Order food from your favorite restaurants in the Steel City.</p>
+                    </div>
+                </div>
+                <div id="jumbotron-right">
+                    <div id="search-container">
+                        <br><br>
+                        <p id="search-container-text">FIND RESTAURANTS NEAR YOU!</p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Zip Code...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Search!</button>
+                            </span>
+                        </div>
+                        <p id="how-it-works"><a href="/howitworks">Learn how it works</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="welcome-options">
+    <div class="row">
+        <div class="col-sm-3 welcome-info">
+            <div class="welcome-glyphs">
+                <span class="glyphicon glyphicon-globe"></span>
+            </div>
+            <h4>Free Online Ordering</h4>
+            <p>No need to call, order from anywhere</p>
+            <p>with an internet connection</p>
+        </div>
+        <div class="col-sm-3 welcome-info">
+            <div class="welcome-glyphs">
+                <span class="glyphicon glyphicon-cutlery"></span>
+            </div>
+            <h4>Millions of Menus</h4>
+            <p>The best of the best</p>
+            <button id="restaurants-button" ng-click="seeRestaurants()">See Restaurants</button>
+        </div>
+        <div class="col-sm-3 welcome-info">
+            <div class="welcome-glyphs">
+                <span class="glyphicon glyphicon-usd"></span>
+            </div>
+            <h4>Save Money</h4>
+            <p>with deals from exclusive restaurants</p>
+            <p>and the time it takes to get your food</p>
+        </div>
+        <div class="col-sm-3 welcome-info">
+            <div class="welcome-glyphs">
+                <span class="glyphicon glyphicon-phone"></span>
+            </div>
+            <h4>Mobile Compatible</h4>
+            <p>Access our site on any mobile device</p>
+            <p>including iPhones, Androids, and tablets</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 contact-us">
+            <h2>Contact Us</h2>
+            <p>Questions? Comments? Concerns? Hit us Up!</p>
+            <contact-us></contact-us>
+        </div>
+        <div class="col-md-6" class="sign-up">
+            <h2>Sign Up!</h2>
+            <p>to view purchase history, etc.</p>
+            <input type="text" class="signup-input" placeholder="first name"><br>
+            <input type="text" class="signup-input" placeholder="last name"><br>
+            <input type="email" class="signup-input" placeholder="email"><br>
+            <input type="password" class="signup-input" placeholder="password"><br>
+            <input type="password" class="signup-input" placeholder="confirm password"><br>
+        </div>
+        <div id="button">   
+            <span class="input-group-btn">
+                <button id="signup-button" class="btn btn-primary" ng-click="signUp()">Sign Up!</button>
+            </span>
+        </div>
+    </div>
+</div>
